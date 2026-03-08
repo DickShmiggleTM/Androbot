@@ -71,6 +71,10 @@ class ModelManager(private val context: Context) {
             "/sdcard/models",
             "/data/local/tmp"
         )
+
+        @JvmStatic external fun nativeScanForModels(directory: String): Array<String>
+        @JvmStatic external fun nativeValidateModel(path: String): String
+        @JvmStatic external fun nativeGetFreeRamBytes(): Long
     }
 
     data class ModelProfile(
@@ -103,14 +107,6 @@ class ModelManager(private val context: Context) {
 
     private val inferenceEngine = InferenceEngine()
     val engine: InferenceEngine get() = inferenceEngine
-
-    // ── JNI declarations ──────────────────────────────────────────────────────
-
-    companion object {
-        external fun nativeScanForModels(directory: String): Array<String>
-        external fun nativeValidateModel(path: String): String
-        external fun nativeGetFreeRamBytes(): Long
-    }
 
     // ── Public API ────────────────────────────────────────────────────────────
 
