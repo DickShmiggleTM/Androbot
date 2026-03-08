@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Androbot</string>
+
+    <!-- Service descriptions -->
+    <string name="ai_service_description">On-device AI inference engine using quantized language model</string>
+    <string name="overlay_service_description">Floating AI assistant overlay</string>
+    <string name="screen_capture_service_description">Screen capture for AI visual analysis</string>
+
+    <!-- Accessibility Service -->
+    <string name="accessibility_service_label">Androbot AI Agent</string>
+    <string name="accessibility_service_description">Allows Androbot to read screen content and perform UI actions on your behalf for AI automation tasks.</string>
+
+    <!-- UI Strings -->
+    <string name="chat_input_hint">Ask anything...</string>
+    <string name="loading_model">Loading model...</string>
+    <string name="no_model_found">No GGUF model found</string>
+    <string name="model_setup_instructions">Place a GGUF model in /sdcard/Androbot/models/</string>
+    <string name="thinking">Thinking…</string>
+    <string name="send">Send</string>
+    <string name="clear_history">Clear History</string>
+    <string name="memory_stats">Memory Stats</string>
+    <string name="toggle_overlay">Toggle Floating Overlay</string>
+    <string name="accessibility_settings">Accessibility Settings</string>
+    <string name="overlay_permission">Overlay Permission</string>
+
+    <!-- Notifications -->
+    <string name="notification_ai_title">Androbot AI</string>
+    <string name="notification_ai_ready">Ready</string>
+    <string name="notification_overlay_title">Androbot Overlay Active</string>
+    <string name="notification_capture_title">Screen Capture Active</string>
+    <string name="notification_stop">Stop</string>
+</resources>

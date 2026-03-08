@@ -1,0 +1,18 @@
+# Build outputs
+.gradle/
+build/
+*.ap_
+
+# Downloaded packages
+*.deb
+
+# IDE
+.idea/
+*.iml
+
+# APK signing
+*.jks
+*.keystore
+
+# Local configuration
+local.properties
